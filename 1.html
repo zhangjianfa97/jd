@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/swiper/css/swiper.css">
+    <style>
+        .box {
+            width: 100px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .box .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box .swiper-slide {
+            height: auto;
+        }
+
+        .box ul {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- swiper-slide里面的内容就是我们真实要滑动的内容 也就是我们的ul li -->
+                <div class="swiper-slide">
+                    <ul>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>哈哈哈哈</li>
+                        <li>呵呵呵呵</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="lib/swiper/js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical', //滑动方向
+            slidesPerView: 'auto', //根据轮播图的高度宽度自动适应放几张图片
+            freeMode: true, //是否要回弹 弹簧效果
+            scrollbar: {
+                el: '.swiper-scrollbar', //添加滚动条
+            },
+            mousewheel: true, //允许鼠标滚轮滚动
+        });
+    </script>
+</body>
+
+</html>
